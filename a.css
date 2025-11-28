@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ffecd2, #fcb69f, #ff9a9e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #fff;
+}
+
+button {
+    background: #4ecdc4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45b7aa;
+}
+
+#countdownOutput, #wishOutput {
+    margin: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn { left: 10px; }
+#nextBtn { right: 10px; }
